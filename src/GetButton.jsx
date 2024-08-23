@@ -10,6 +10,7 @@ export default function GetButton({ selectedGenre, setMovies }) {
                 let res = await Axios.get(`http://localhost:3000/movies?genre=${selectedGenre}`);
                 setMovies(res.data);
                 console.log(res.data);
+                console.log("git test!");
             }
         } catch (error) {
             console.error("Error fetching movies:", error);
